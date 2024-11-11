@@ -1,0 +1,146 @@
+:root{
+    --var-background-color:#006341;
+    --var-text-color:#111;
+    --var-buttom-color:#454545;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Oswald", sans-serif;
+    text-transform: capitalize;
+}
+
+p{
+    font-family: "Open Sans", serif;
+    color: var(--var-text-color);
+}
+
+.line{
+    background-color: var(--var-background-color);
+    height: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    height: inherit;
+    width: 100%;
+    display: flex;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.header-logo img{
+    height: 70px;
+}
+
+.header-nav_bar{
+    height: inherit;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-nav_bar form{
+    border: 1px solid var(--var-text-color);
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-nav_bar form input{
+    font-size: 17px;
+    color: var(--var-buttom-color);
+    border-color: var(--var-buttom-color);
+    border-radius: 0px;
+    border: 0;
+    padding: 10px;
+    outline: none;
+}
+
+.header-nav_bar form button{
+    background-color: white;
+    padding: 10px;
+    font-size: 17px;
+    color: var(--var-buttom-color);
+    border-color: var(--var-buttom-color);
+    border: 0;
+    cursor: pointer;
+}
+
+.header-nav_bar form button img{
+    height: 20px;
+}
+
+nav div{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav div img{
+    margin-left: 70px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.main-background{
+    height: calc(100vh - 110px);
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-background--header,
+.main-background--text,
+.main-background--imgs
+{
+    width: 100%;
+    display:inline-flex;
+    justify-content: flex-start;
+}
+
+.main-background--header h1{
+    font-size: 90px;
+}
+
+.main-background--text{
+    margin-top: 30px;
+}
+
+.main-background--imgs .main-background--img{
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.main-background--img img{
+    height: 160px;
+    border-radius: 100px;
+    border: 5px solid var(--var-background-color);
+}
